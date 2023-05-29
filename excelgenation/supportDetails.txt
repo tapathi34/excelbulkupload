@@ -1,0 +1,40 @@
+{
+'HandloomCategories': [
+                "handloom sarees","stitching services", "fabrics",
+                "kuppadam pattu sarees",
+                "kanchi lehengas", "soft silk kanchipuram sarees", "kanchi pattu sarees",
+                "uppada soft silk sarees","uppada pattu sarees",
+                "pochampally ikkat pure silk sarees", "ikkat lehengas",
+                "gadwal pattu sarees",
+                "paithani pure silk sarees",
+                "chanderi soft silk sarees", "chenderi silk sarees",
+                "linen sarees",
+                "kollam pattu sarees",
+                "tripura silk sarees", 
+                "organza sarees",
+                "banarasi sarees",
+                "chiffon sarees", 
+                "kora sarees",
+                "georgette sarees",
+                "uppada cotton sarees", "uppada tissue sarees", "gadwal sico sarees",
+                "gadwal cotton sarees", "uppada sico sarees","pochampally ikkat cotton sarees", "ikkat cotton sarees",
+                "venkatagiri pattu sarees",
+                "mangalagiri pattu sarees", "mangalagiri sico sarees",
+                "lichi sarees",
+                "maggam work",
+                "computer embroidery"
+                ],
+'vendorList': [
+              "tapathirksarees@gmail.com",
+              "punnasaikiran.2000@gmail.com",
+              "pochampallyikkatmanufacturer@gmail.com",
+              "karthiktummuri905@gmail.com",
+              "veerababun40@gmail.com",
+              "sarikareddy1601@gmail.com",
+              "sowmyachiguru8991@gmail.com",
+              "manchalamadappagadwalsarees@gmail.com",
+              "nalinigadwal@gmail.com",
+              "tapathimglsarees@gmail.com",
+              "ganjianand205@gmail.com"
+              ]
+}

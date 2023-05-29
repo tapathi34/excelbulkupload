@@ -1,0 +1,8 @@
+{
+"vendor":"ganjianand205@gmail.com",
+"category":"pochampally ikkat pure silk sarees",
+"price":1200,
+"description":"EXCLUSIVE SILK SAREES\n\r*Silk mark Certified\n\rDouble weaving*",
+"special_price":10000,
+"images_folder_location":"C:\\Users\\jvanka\\Downloads\\Tapathi\\Tapathi\\BulkUploadAutomation\\excelgenation\\img"
+}
