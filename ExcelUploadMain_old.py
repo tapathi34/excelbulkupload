@@ -47,6 +47,10 @@ sup.fetching_files_to_local(SER_CSV_PATH, LOC_CSV_PATH)
 # excelList = [filename for filename in filenames if filename.endswith(".xlsx")]
 # print(csvList)
 
+#creating Full CSV folder
+if not os.path.isdir(FULLCSV_LOC_PATH):
+    os.mkdir(FULLCSV_LOC_PATH)
+
 for root,subDirs,files in os.walk(LOC_CSV_PATH):
     for file in files:
         if file.endswith(".xlsx"):

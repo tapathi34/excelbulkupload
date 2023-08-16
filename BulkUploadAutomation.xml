@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <data>
-	<!-- Folder path to copy CSVs into local from server-->
+	<!-- Server Folder path to copy CSVs into local from server-->
    <SER_CSV_PATH>/var/www/vhosts/tapathi.com/httpdocs/pub/media/Vendor/</SER_CSV_PATH>
-	<!-- Folder path to copy Images into local from server-->
-   <LOC_CSV_PATH>C:\Users\jvanka\Downloads\Tapathi\BulkUpload\csv</LOC_CSV_PATH>
+	<!-- Local Folder path to copy CSV into local Folder from server-->
+   <LOC_CSV_PATH>C:\Users\naray\Downloads\Tapathi\BulkUpload\csv</LOC_CSV_PATH>
 	<!-- Folder path to copy Login details text file into local from server-->
-   <FULLCSV_LOC_PATH>C:\Users\jvanka\Downloads\Tapathi\BulkUpload\FullCSV</FULLCSV_LOC_PATH>
+   <FULLCSV_LOC_PATH>C:\Users\naray\Downloads\Tapathi\BulkUpload\FullCSV</FULLCSV_LOC_PATH>
 	<!-- Folder path to copy All products CSV dump file into local from server-->
-   <CAT_CSV_WITH_PATH>C:\Users\jvanka\Downloads\Tapathi\BulkUpload\SupportFiles\Category.csv</CAT_CSV_WITH_PATH>
+   <CAT_CSV_WITH_PATH>C:\Users\naray\Downloads\Tapathi\BulkUpload\SupportFiles\Category.csv</CAT_CSV_WITH_PATH>
 	<!-- Folder path to copy All products CSV dump file into local from server-->
-   <META_CSV_WITH_PATH>C:\Users\jvanka\Downloads\Tapathi\BulkUpload\SupportFiles\MetaDetails.csv</META_CSV_WITH_PATH>
+   <META_CSV_WITH_PATH>C:\Users\naray\PycharmProjects\excelbulkupload\Support\MetaDetails.csv</META_CSV_WITH_PATH>
 	<!-- Folder path to copy All products CSV dump file into local from server-->
    <!--  <LOGIN_DETAILS_PATH_IN_LOC>C:\Users\jvanka\Downloads\Tapathi\PyImageInsertion\JP\Support</LOGIN_DETAILS_PATH_IN_LOC>  -->
 	<!-- Admin login-->
    <LOGIN_ID>Tapathi</LOGIN_ID>
 	<!-- Admin login-->
-   <LOGIN_PSWD>Ravi@205</LOGIN_PSWD>
+   <LOGIN_PSWD>Dots@32451!</LOGIN_PSWD>
 	<!-- Image folder path in server -->
    <IMG_DIR_PATH>/var/import/images/import_images</IMG_DIR_PATH>
 	<!-- Folder path to copy Login details text file into local from server-->
-   <LOGIN_DETAILS_PATH_IN_LOC>\\rcinnet\home\jvanka\My Documents\Downloads_INM0603\Tapathi\BulkUploadAutomation\Test\Support</LOGIN_DETAILS_PATH_IN_LOC>
+   <LOGIN_DETAILS_PATH_IN_LOC>C:\Users\naray\PycharmProjects\excelbulkupload\Support\</LOGIN_DETAILS_PATH_IN_LOC>
   
 </data>

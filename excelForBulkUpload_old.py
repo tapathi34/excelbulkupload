@@ -1,6 +1,6 @@
 import os, time, importlib
 from os.path import join
-from Support.csvDataManipulation_old import *
+from Support.csvDataManipulation import *
 from Support.Support import * #Support as sup
 import pandas as pd
 
@@ -256,6 +256,7 @@ def excelForBulkUpload(inputCsv, catCsv, outputCsv):
     outDF['use_config_deferred_stock_update'] = ['1'] * dataLen
         
     # write data into output file
+
     outDF.to_csv(outputCsv, index=False)
     cData.to_csv(catCsv, index=False)
     

@@ -86,18 +86,20 @@ def getChromeDriver():
 
     global driver, wait60, wait15, wait900
     
-    # driver = webdriver.Chrome(ChromeDriverManager().install())
-    chrome_options = webdriver.ChromeOptions()
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+    #chrome_options = webdriver.ChromeOptions()
 #    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument("window-size=1024,768")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("start-maximized")
-    desired = chrome_options.to_capabilities()
-    driver = webdriver.Chrome(executable_path=r'C:\Users\jvanka\Downloads\chromedriver_win32\chromedriver.exe',options=chrome_options,desired_capabilities=desired)
+#     chrome_options.add_argument('--disable-gpu')
+#     chrome_options.add_argument("window-size=1024,768")
+#     chrome_options.add_argument("--no-sandbox")
+#     chrome_options.add_argument("start-maximized")
+#     desired = chrome_options.to_capabilities()
+#     driver = webdriver.Chrome()
+#     print("driver",driver)
+    #driver = webdriver.Chrome(executable_path=r'C:\Users\naray\Downloads\chromedriver_win32\chromedriver.exe',options=chrome_options,desired_capabilities=desired)
 #     driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver',chrome_options=chrome_options)
      #driver = webdriver.Chrome(executable_path='/home/syamala_narala/vendorautomation/code/chromedriver.exe')
-     #driver = webdriver.Chrome()
+
     
     # waits 
     wait15 = WebDriverWait(driver,15)

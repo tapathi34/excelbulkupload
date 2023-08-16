@@ -55,7 +55,7 @@ def ReadXML(tag):
         tree = ET.parse('BulkUploadAutomation.xml')
         root = tree.getroot()
     except:
-        print(xmlFile +" is not present or Element Tree is not installed")
+        print("Config file is not present or Element Tree is not installed")
         return "Error"
 
 
@@ -161,6 +161,7 @@ def fetching_files_to_local(ser_directory, local_directory):
         sftp.chdir(ser_directory)
 
     except:
+        print(ser_directory + " directory not found")
         return ser_directory + " directory not found"
 
     # files = sftp.listdir()
@@ -176,7 +177,7 @@ def fetching_files_to_local(ser_directory, local_directory):
     for entry in sftp.listdir_attr(ser_directory):
         mode = entry.st_mode
         if S_ISDIR(mode):
-            ser_dir= os.path.join(ser_directory,'/',entry.filename)
+            ser_dir= os.path.join(ser_directory,entry.filename)
             loc_dir=os.path.join(local_directory,entry.filename)
             if not(os.path.isdir(loc_dir)):
                 os.mkdir(loc_dir)
