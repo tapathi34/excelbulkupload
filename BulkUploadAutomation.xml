@@ -15,7 +15,7 @@
 	<!-- Admin login-->
    <LOGIN_ID>Tapathi</LOGIN_ID>
 	<!-- Admin login-->
-   <LOGIN_PSWD>Dots@32451!</LOGIN_PSWD>
+   <LOGIN_PSWD>Dots32451!</LOGIN_PSWD>
 	<!-- Image folder path in server -->
    <IMG_DIR_PATH>/var/import/images/import_images</IMG_DIR_PATH>
 	<!-- Folder path to copy Login details text file into local from server-->

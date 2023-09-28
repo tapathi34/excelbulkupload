@@ -3,6 +3,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
+#Adding theese package extra
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.chrome.options import Options
 import csv, time, os
 
 
@@ -85,8 +89,31 @@ def itemClick(item, ID=True, value="", delay=30):
 def getChromeDriver():
 
     global driver, wait60, wait15, wait900
-    
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+
+    # Set the path to the ChromeDriver executable
+    chrome_driver_path = r"C:\\Users\\naray\\Downloads\\chromedriver-win64_1\\chromedriver-win64\\chromedriver.exe"
+
+    # Create a ChromeOptions object to customize ChromeDriver options
+    chrome_options = Options()
+    chrome_options.add_argument("--start-maximized")  # Example: Open Chrome in maximized window
+    #chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disable-gpu')
+    #chrome_options.add_argument("window-size=1024,768")
+    chrome_options.add_argument("--no-sandbox")
+
+    # Create a DesiredCapabilities object (optional)
+    desired_capabilities = DesiredCapabilities.CHROME
+
+    # Create a Service object (optional)
+    chrome_service = Service(chrome_driver_path)
+
+    # Create the Chrome WebDriver instance
+    driver = webdriver.Chrome(
+        options=chrome_options,
+        service=chrome_service  # You can omit this if not needed
+    )
+
+    #driver = webdriver.Chrome(ChromeDriverManager().install())
     #chrome_options = webdriver.ChromeOptions()
 #    chrome_options.add_argument('--headless')
 #     chrome_options.add_argument('--disable-gpu')
@@ -124,14 +151,28 @@ def login(driver, username, pswd):
         driver.get(loginPagePath)
         time.sleep(1)
     except:
-        #driver = webdriver.Chrome(ChromeDriverManager().install())
-        chrome_options = webdriver.ChromeOptions()
+        # Set the path to the ChromeDriver executable
+        chrome_driver_path = r"C:\\Users\\naray\\Downloads\\chromedriver-win64_1\\chromedriver-win64\\chromedriver.exe"
+
+        # Create a ChromeOptions object to customize ChromeDriver options
+        chrome_options = Options()
+        chrome_options.add_argument("--start-maximized")  # Example: Open Chrome in maximized window
         chrome_options.add_argument('--headless')
-        #chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument('--disable-gpu')
         chrome_options.add_argument("window-size=1024,768")
         chrome_options.add_argument("--no-sandbox")
-        driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver',chrome_options=chrome_options)
-        #driver = webdriver.Chrome()
+
+        # Create a DesiredCapabilities object (optional)
+        desired_capabilities = DesiredCapabilities.CHROME
+
+        # Create a Service object (optional)
+        chrome_service = Service(chrome_driver_path)
+
+        # Create the Chrome WebDriver instance
+        driver = webdriver.Chrome(
+            options=chrome_options,
+            service=chrome_service  # You can omit this if not needed
+        )
         driver.get(loginPagePath)
 
     if loginPagePath in (str(driver.current_url)):
@@ -230,7 +271,7 @@ def importFileToAddProducts(fileWithPath, imgDirPath, loginUserName, loginPswd):
     ##     For Type "Local Server" use relative path to <Magento root directory>/var/import/images, e.g. product_images, import_images/batch1.
     ##     For example, in case product_images, files should be placed into <Magento root directory>/var/import/images/product_images folder.
     
-    # driver = getChromeDriver()
+    driver = getChromeDriver()
     
     loginStatus = login(driver, loginUserName, loginPswd)
     
